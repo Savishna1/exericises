@@ -79,7 +79,7 @@ public:
       for (int j = 0; j < n; ++j) {
         std::cout << data[i][j] << " ";
       }
-      std::cout << std::endl;
+      std::cout << "\n";
     }
   }
 };
@@ -88,12 +88,12 @@ int main() {
   matrix mat(3, 3);
   mat.fill(5);
   mat.print();
-  std::cout << "Resizing matrix to 2x4..." << std::endl;
+  std::cout << "Resizing matrix to 2x4..." << "\n";
   mat.resize(2, 4);
   mat.print();
-  std::cout << "Rows: " << mat.getRows() << ", Columns: " << mat.getCols() << std::endl;
+  std::cout << "Rows: " << mat.getRows() << ", Columns: " << mat.getCols() << "\n";
   matrix matCopy = mat;
-  std::cout << "Copied matrix:" << std::endl;
+  std::cout << "Copied matrix:" << "\n";
   matCopy.print();
   return 0;
 }
